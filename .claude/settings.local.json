@@ -2,6 +2,7 @@
   "permissions": {
     "allow": [
       "Bash(ls -la /Users/marwah.zaingmail.com/Projects/ClaudeTestTutorial/ 2>&1; echo \"---home---\"; ls -la ~/.claude 2>&1 | head -30)",
+      "Bash(ls*)",
       "Read(//Users/marwah.zaingmail.com/.claude/**)"
     ],
     "deny": [
@@ -9,7 +10,13 @@
       "Bash(git push --force*)",
       "Bash(git reset --hard*)",
       "Bash(git clean -f*)",
-      "Bash(git checkout -- *)"
+      "Bash(git checkout -- *)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/secrets/*)",
+      "Read(**/credentials/*)",
+      "Read(**/*.pem)",
+      "Read(**/*.key)"
     ]
   }
 }
