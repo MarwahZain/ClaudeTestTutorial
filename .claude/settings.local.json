@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /Users/marwah.zaingmail.com/Projects/ClaudeTestTutorial/ 2>&1; echo \"---home---\"; ls -la ~/.claude 2>&1 | head -30)",
+      "Read(//Users/marwah.zaingmail.com/.claude/**)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force*)",
+      "Bash(git reset --hard*)",
+      "Bash(git clean -f*)",
+      "Bash(git checkout -- *)"
+    ]
+  }
+}
